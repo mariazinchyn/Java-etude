@@ -1,0 +1,48 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        
+        Scanner sc=new Scanner(System.in);
+        String A=sc.next();
+        String B=sc.next();
+        /* Enter your code here. Print output to STDOUT. */
+        
+        //firs line:
+        int sum = A.length() + B.length();
+        
+        //second line:
+        String second = "";
+                if(A.compareTo(B)== 0){
+                    second = "Yes";
+                } else {
+                    second = "No";
+                }
+                
+
+        
+        //third line:
+        
+        String capitalizeA = A.substring(0, 1).toUpperCase() + A.substring(1);
+        String capitalizeB = B.substring(0, 1).toUpperCase() + B.substring(1);
+        
+        String capitalize = capitalizeA + " " + capitalizeB;
+        
+        //output:
+        System.out.println(sum);
+        System.out.println(second);
+        System.out.println(capitalize);
+
+        
+
+
+        
+        
+        
+    }
+}
+
+
+
